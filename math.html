@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function add2Nos(){
+            //declare a variable to hold the value
+            var val1 =  window.document.f1.no1.value
+            var val2 =  window.document.f1.no2.value
+            var sum = parseInt(val1) + parseInt(val2)
+            //show the result on to the text field
+            window.document.f1.res.value=sum
+        }    
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <form name="f1">
+        <input type="text" name="no1" placeholder="number"/>
+        +
+        <input type="text" name="no2" placeholder="number"/>
+        <input type="button" value="   =   " onclick ="add2Nos()"/>
+        <input type="text" name="res" placeholder="result"/>
+    </form>
+</body>
+</html>
